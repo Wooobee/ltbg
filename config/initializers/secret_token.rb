@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MonkeyBusiness::Application.config.secret_key_base = '47c911d915d218419e3e3deb6dc07a1f51c59d04205dc753a5f1f16d1dd763a18d08c6e934a733e642db9eaaa58f602c8ef5b66b85167f5c2da97e53812b9ef0'
+MonkeyBusiness::Application.config.secret_key_base = 'c37cfd27b8e856c6f14be993f89d850110ed0da08216d31eb0391434a8aa5ad1c462c39a500a2fea4000b0e4a0406fe95dee537432c9f06029bf3c915450e12c'
