@@ -45,7 +45,7 @@ Preferences:
 * apps4: none
 * dev_webserver: webrick
 * prod_webserver: thin
-* database: postgresql
+* database: sqlite
 * templates: erb
 * unit_test: rspec
 * integration: none
@@ -78,7 +78,7 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 Database
 --------
 
-This application uses PostgreSQL with ActiveRecord.
+This application uses SQLite with ActiveRecord.
 
 Development
 -----------
