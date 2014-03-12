@@ -9,7 +9,7 @@
 # Add application configuration variables here, as shown below.
 #
 ADMIN_NAME: First User
-ADMIN_EMAIL: user@example.com
-ADMIN_PASSWORD: changeme
-ROLES: [admin, user, VIP]
+ADMIN_EMAIL: manuel@stylizimo.de
+ADMIN_PASSWORD: cocktail84!
+ROLES: [admin, user]
 
