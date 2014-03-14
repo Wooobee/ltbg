@@ -9,15 +9,9 @@ class Api::TasksController < ApplicationController
   respond_to :json
 
   def index
-    render :text => '{
-  "success":true,
-  "info":"ok",
-  "data":{
-          "tasks":[
-                    {"title":"Complete the app1111"},
-                    {"title":"Complete the tutorial"}
-                  ]
-         }
-}'
+    render :status => 200,
+           :json => { :success => true,
+                      :info => "All tasks",
+                      :data => { :tasks => Task.all } }
   end
 end
