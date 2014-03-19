@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @timeline.user_id %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @timeline.task_id %>
+</p>
+
+<p>
+  <strong>Custom text:</strong>
+  <%= @timeline.custom_text %>
+</p>
+
+<%= link_to 'Edit', edit_timeline_path(@timeline) %> |
+<%= link_to 'Back', timelines_path %>
