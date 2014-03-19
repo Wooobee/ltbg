@@ -16,9 +16,10 @@ ActiveRecord::Schema.define(version: 20140314203813) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "chatmessages", force: true do |t|
+  create_table "chatmessages", id: false, force: true do |t|
+    t.string   "id",         null: false
     t.integer  "user_id"
-    t.integer  "task_id"
+    t.string   "task_id"
     t.string   "message"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -35,7 +36,8 @@ ActiveRecord::Schema.define(version: 20140314203813) do
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
   add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
 
-  create_table "tasks", force: true do |t|
+  create_table "tasks", id: false, force: true do |t|
+    t.string   "id",          null: false
     t.string   "name"
     t.string   "description"
     t.string   "icon"
@@ -44,9 +46,10 @@ ActiveRecord::Schema.define(version: 20140314203813) do
     t.datetime "updated_at"
   end
 
-  create_table "timelines", force: true do |t|
+  create_table "timelines", id: false, force: true do |t|
+    t.string   "id",          null: false
     t.integer  "user_id"
-    t.integer  "task_id"
+    t.string   "task_id"
     t.string   "custom_text"
     t.datetime "created_at"
     t.datetime "updated_at"

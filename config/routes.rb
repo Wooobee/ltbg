@@ -22,5 +22,7 @@ MonkeyBusiness::Application.routes.draw do
     delete 'timeline' => 'timelines#destroy', :as => 'timeline_delete'
     post 'post' => 'chatmessages#create', :as => 'post'
     get 'chatmessages' => 'chatmessages#index', :as => 'chatmessages'
+    get 'live' => 'live_stats#index', :as => 'live'
   end
+
 end
